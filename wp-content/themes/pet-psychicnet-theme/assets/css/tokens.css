@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Pet Psychic — Design Tokens
+   Warm, mystical, approachable animal communication theme
+   ========================================================================== */
+
+:root {
+    /* ── Palette ── */
+    --color-primary:       #2D5F2D;
+    --color-primary-dark:  #1E4A1E;
+    --color-primary-light: #3D7A3D;
+    --color-secondary:     #D4A843;
+    --color-secondary-dark:#B8902A;
+    --color-secondary-light:#E8C56E;
+    --color-accent:        #4A8C4A;
+    --color-accent-light:  #6BAE6B;
+
+    --color-mystic:        #7B5EA7;
+    --color-mystic-light:  #9E85C2;
+    --color-warm:          #C97B4B;
+
+    --color-bg:            #FAFDF7;
+    --color-bg-alt:        #F0F5EB;
+    --color-bg-warm:       #FDF8F0;
+    --color-bg-mystic:     #F5F0FA;
+    --color-bg-dark:       #1A3A1A;
+    --color-surface:       #FFFFFF;
+
+    --color-text:          #2D3B2D;
+    --color-text-light:    #6B7D6B;
+    --color-text-muted:    #95A595;
+    --color-text-inverse:  #FFFFFF;
+    --color-text-on-dark:  rgba(255,255,255,0.85);
+
+    --color-border:        #D5E0CE;
+    --color-border-light:  #E8EFE3;
+    --color-divider:       rgba(45,95,45,0.08);
+
+    --color-success:       #4caf50;
+    --color-danger:        #e57373;
+    --color-warning:       #FFB74D;
+
+    /* ── Typography ── */
+    --font-heading:  'Quicksand', 'Segoe UI', sans-serif;
+    --font-body:     'Nunito', 'Segoe UI', sans-serif;
+    --font-accent:   'Quicksand', sans-serif;
+
+    --fs-display:    clamp(2.5rem, 5vw, 4rem);
+    --fs-h1:         clamp(2rem, 4vw, 3rem);
+    --fs-h2:         clamp(1.6rem, 3vw, 2.25rem);
+    --fs-h3:         clamp(1.25rem, 2vw, 1.6rem);
+    --fs-h4:         1.15rem;
+    --fs-body:       1rem;
+    --fs-body-lg:    1.125rem;
+    --fs-small:      0.875rem;
+    --fs-xs:         0.8rem;
+
+    --lh-heading:    1.2;
+    --lh-body:       1.75;
+
+    --fw-normal:     400;
+    --fw-medium:     500;
+    --fw-semibold:   600;
+    --fw-bold:       700;
+
+    /* ── Spacing ── */
+    --sp-2xs:        4px;
+    --sp-xs:         8px;
+    --sp-sm:         12px;
+    --sp-md:         16px;
+    --sp-lg:         24px;
+    --sp-xl:         32px;
+    --sp-2xl:        48px;
+    --sp-3xl:        64px;
+    --sp-4xl:        96px;
+    --sp-section:    clamp(60px, 10vw, 100px);
+
+    /* ── Layout ── */
+    --container-max:     1200px;
+    --container-narrow:  800px;
+    --container-wide:    1400px;
+    --container-padding: clamp(16px, 4vw, 32px);
+
+    /* ── Borders & Radius ── */
+    --radius-xs:     4px;
+    --radius-sm:     8px;
+    --radius-md:     12px;
+    --radius-lg:     20px;
+    --radius-xl:     28px;
+    --radius-pill:   999px;
+    --radius-circle: 50%;
+
+    /* ── Shadows ── */
+    --shadow-xs:     0 1px 2px rgba(45,95,45,0.04);
+    --shadow-sm:     0 2px 8px rgba(45,95,45,0.06);
+    --shadow-md:     0 4px 16px rgba(45,95,45,0.09);
+    --shadow-lg:     0 8px 32px rgba(45,95,45,0.12);
+    --shadow-xl:     0 16px 48px rgba(45,95,45,0.16);
+    --shadow-glow:   0 0 24px rgba(212,168,67,0.25);
+    --shadow-glow-green: 0 0 30px rgba(45,95,45,0.15);
+
+    /* ── Transitions ── */
+    --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-bounce:   cubic-bezier(0.34, 1.56, 0.64, 1);
+    --duration-fast: 0.15s;
+    --duration:      0.3s;
+    --duration-slow: 0.5s;
+
+    /* ── Z-Index ── */
+    --z-base:        1;
+    --z-dropdown:    10;
+    --z-sticky:      50;
+    --z-overlay:     100;
+    --z-modal:       200;
+
+    /* ── SVG Patterns ── */
+    --pattern-paws: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ctext x='10' y='40' font-size='18' fill='%232D5F2D' fill-opacity='0.04'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E");
+    --pattern-dots: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%232D5F2D' fill-opacity='0.05'/%3E%3C/svg%3E");
+    --pattern-leaves: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ctext x='20' y='50' font-size='22' fill='%232D5F2D' fill-opacity='0.035'%3E%F0%9F%8D%83%3C/text%3E%3C/svg%3E");
+
+    /* ── Gradients ── */
+    --grad-hero:     linear-gradient(160deg, #E8F5E0 0%, #D5E0CE 35%, #C5D4BA 70%, #B8CAA8 100%);
+    --grad-hero-overlay: linear-gradient(180deg, rgba(250,253,247,0) 0%, rgba(250,253,247,0.6) 100%);
+    --grad-primary:  linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    --grad-gold:     linear-gradient(135deg, var(--color-secondary), #E8C56E);
+    --grad-dark:     linear-gradient(180deg, #1A3A1A 0%, #0F250F 100%);
+    --grad-mystic:   linear-gradient(135deg, #F5F0FA, #EDE4F7);
+    --grad-warm:     linear-gradient(135deg, #FDF8F0, #FAF0E4);
+}
+
+/* ── Dark mode (optional, prep) ── */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg:        #121A12;
+        --color-bg-alt:    #1A251A;
+        --color-surface:   #1E2E1E;
+        --color-text:      #D5E0CE;
+        --color-text-light:#95A595;
+        --color-border:    #2D4A2D;
+    }
+}

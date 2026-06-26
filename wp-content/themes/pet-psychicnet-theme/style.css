@@ -1,0 +1,20 @@
+/*
+Theme Name: Pet Psychic
+Theme URI: https://pet-psychic.net
+Author: Pet Psychic
+Author URI: https://pet-psychic.net
+Description: Premium theme for Pet Psychic — warm, mystical animal communication readings. Features playful paw-print motifs, nature-inspired organic shapes, and a compassionate design.
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pet-psychicnet-theme
+Tags: custom-menu, custom-logo, featured-images, theme-options, one-column, two-columns
+Requires at least: 6.0
+Requires PHP: 7.4
+*/
+
+/* Styles are loaded via assets/css/ — see functions.php */
+
+/* Auto-added logo sizing normalization (bump micro-logos) */
+.custom-logo, img.custom-logo { display: block; max-height: 72px; width: auto; height: auto; }
+@media (max-width: 768px) { .custom-logo, img.custom-logo { max-height: 56px; } }
